@@ -35,18 +35,28 @@ public static void main(String[] args)
 //	greeting2.sayHello();
 	
 	
-	//using interface with the help of lambda expression
+//	//using interface with the help of lambda expression
+//	
+//	Greeting greeting = ()->
+//	{
+//		System.out.println("Very first lambda expression");
+//	};
+//	greeting.sayHello();
+//	
+//	Greeting greeting2 = ()->
+//	{
+//		System.out.println("second lambda expression...");
+//	};
+//	greeting2.sayHello();
 	
-	Greeting greeting = ()->
-	{
-		System.out.println("Very first lambda expression");
-	};
-	greeting.sayHello();
 	
-	Greeting greeting2 = ()->
+	//finding length of a string...
+	LengthInter lengthInter = (str) ->
 	{
-		System.out.println("second lambda expression...");
+		return str.length();
 	};
-	greeting2.sayHello();
+	System.out.println("Length of a given String is : " + lengthInter.getLength("Mohd Khizar Rasheed"));
+	
+	System.out.println("Length of a given String is : " + lengthInter.getLength("Maiisha..."));
 }
 }
