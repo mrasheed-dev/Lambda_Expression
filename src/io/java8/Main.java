@@ -10,27 +10,42 @@ public static void main(String[] args)
 	
 	
 	
-	//first anonymus class
-	Greeting greeting = new Greeting() 
+//	//first anonymus class
+//	Greeting greeting = new Greeting() 
+//	{
+//		@Override
+//		public void sayHello()
+//		{
+//			System.out.println("Saying hello for the first time...");
+//		}
+//	};
+//	greeting.sayHello();
+//	
+//	
+//	
+//	//second Anonymus class
+//	Greeting greeting2 = new Greeting() 
+//	{
+//		@Override
+//		public void sayHello()
+//		{
+//			System.out.println("Saying hello for the Second Time...");
+//		}
+//	};
+//	greeting2.sayHello();
+	
+	
+	//using interface with the help of lambda expression
+	
+	Greeting greeting = ()->
 	{
-		@Override
-		public void sayHello()
-		{
-			System.out.println("Saying hello for the first time...");
-		}
+		System.out.println("Very first lambda expression");
 	};
 	greeting.sayHello();
 	
-	
-	
-	//second Anonymus class
-	Greeting greeting2 = new Greeting() 
+	Greeting greeting2 = ()->
 	{
-		@Override
-		public void sayHello()
-		{
-			System.out.println("Saying hello for the Second Time...");
-		}
+		System.out.println("second lambda expression...");
 	};
 	greeting2.sayHello();
 }
